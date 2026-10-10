@@ -1,0 +1,16 @@
+backfill_statistics:
+  name: Backfill consumption history
+  description: >
+    Import historical daily consumption from Enedis into Home Assistant's
+    long-term statistics (feeds the Energy dashboard).
+  fields:
+    days:
+      name: Days
+      description: How many days of history to import (max 1095 ≈ 3 years).
+      example: 365
+      default: 365
+      selector:
+        number:
+          min: 1
+          max: 1095
+          mode: box

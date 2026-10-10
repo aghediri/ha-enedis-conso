@@ -1,0 +1,49 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Enedis Consumption",
+        "description": "Enter your Linky PRM (14-digit PDL) and MyElectricalData token. Prices are €/kWh and can be changed later in options.",
+        "data": {
+          "prm": "PRM / PDL (14 digits)",
+          "token": "MyElectricalData token",
+          "name": "Name",
+          "price_base": "Base price (€/kWh)",
+          "price_hp": "Peak HP price (€/kWh)",
+          "price_hc": "Off-peak HC price (€/kWh)",
+          "price_blue_hp": "Tempo Blue HP (€/kWh)",
+          "price_blue_hc": "Tempo Blue HC (€/kWh)",
+          "price_white_hp": "Tempo White HP (€/kWh)",
+          "price_white_hc": "Tempo White HC (€/kWh)",
+          "price_red_hp": "Tempo Red HP (€/kWh)",
+          "price_red_hc": "Tempo Red HC (€/kWh)"
+        }
+      }
+    },
+    "error": {
+      "invalid_prm": "The PRM must be exactly 14 digits."
+    },
+    "abort": {
+      "already_configured": "This PRM is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Enedis prices",
+        "description": "Adjust your €/kWh prices to match your contract.",
+        "data": {
+          "price_base": "Base price (€/kWh)",
+          "price_hp": "Peak HP price (€/kWh)",
+          "price_hc": "Off-peak HC price (€/kWh)",
+          "price_blue_hp": "Tempo Blue HP (€/kWh)",
+          "price_blue_hc": "Tempo Blue HC (€/kWh)",
+          "price_white_hp": "Tempo White HP (€/kWh)",
+          "price_white_hc": "Tempo White HC (€/kWh)",
+          "price_red_hp": "Tempo Red HP (€/kWh)",
+          "price_red_hc": "Tempo Red HC (€/kWh)"
+        }
+      }
+    }
+  }
+}
